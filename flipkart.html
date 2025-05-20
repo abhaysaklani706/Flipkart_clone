@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flipkart Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Mobile menu toggle
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      <div class="flex items-center space-x-4">
+        <img src="https://1000logos.net/wp-content/uploads/2021/02/Flipkart-logo.png" alt="Flipkart Logo" class="h-8 w-auto"/>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="hidden md:flex flex-1 max-w-xl mx-4">
+        <input type="text" placeholder="Search for products, brands and more" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-400" />
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6">
+        <button class="text-blue-600 font-semibold">Login</button>
+        <div class="hover:text-blue-600 cursor-pointer">Become a Seller</div>
+        <div class="hover:text-blue-600 cursor-pointer">More</div>
+        <div class="flex items-center hover:text-blue-600 cursor-pointer">
+          <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4" />
+            <path d="M7 13l-1.5 6H19a1 1 0 0 0 1-1V6H6l1 7z" />
+          </svg>
+          Cart
+        </div>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button onclick="toggleMenu()" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+      <input type="text" placeholder="Search" class="w-full px-4 py-2 mb-2 border rounded-md" />
+      <div class="space-y-2">
+        <div class="hover:text-blue-600 cursor-pointer">Login</div>
+        <div class="hover:text-blue-600 cursor-pointer">Become a Seller</div>
+        <div class="hover:text-blue-600 cursor-pointer">More</div>
+        <div class="hover:text-blue-600 cursor-pointer">Cart</div>
+      </div>
+    </div>
+
+
+<!-- Flipkart-style Category Header -->
+<div class="w-full bg-white shadow-sm py-4">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center overflow-x-auto">
+    
+    <!-- Single Category Item -->
+    <a href="https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_5f580001-04d1-4044-9bb5-d444940d075b_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Kilos_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1"><div class="flex flex-col items-center mx-4">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/29327f40e9c4d26b.png" class="w-16 h-16" alt="Grocery" />
+      <span class="text-sm font-medium mt-1">Grocery</span>
+    </div></a>
+    
+    <a href="https://www.flipkart.com/mobile-phones-store?fm=neo%2Fmerchandising&iid=M_d0b1f337-c45f-437d-ac52-11e387244736_1_372UD5BXDFYS_MC.ZRQ4DKH28K8J&otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Mobiles_ZRQ4DKH28K8J&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L0_view-all&cid=ZRQ4DKH28K8J"><div class="flex flex-col items-center mx-4">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/22fddf3c7da4c4f4.png" class="w-16 h-16" alt="Mobiles" />
+      <span class="text-sm font-medium mt-1">Mobiles</span>
+    </div></a>
+    
+    <a href="https://www.flipkart.com/clothing-and-accessories/topwear/pr?sid=clo,ash&p[]=facets.ideal_for%255B%255D%3DMen&p[]=facets.ideal_for%255B%255D%3Dmen&otracker=categorytree&fm=neo%2Fmerchandising&iid=M_0a4f49ef-5b27-40fe-8101-7349c4152172_1_372UD5BXDFYS_MC.AHHHWF67UPNB&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Fashion~Men%27s%2BTop%2BWear~All_AHHHWF67UPNB&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=AHHHWF67UPNB"><div class="flex flex-col items-center mx-4">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0ff199d1bd27eb98.png" class="w-16 h-16" alt="Fashion" />
+      <span class="text-sm font-medium mt-1">Fashion</span>
+    </div></a>
+
+    
+
+    <a href="https://www.flipkart.com/audio-video/pr?sid=0pm&otracker=categorytree&fm=neo%2Fmerchandising&iid=M_905f0521-c4c6-4685-a0b3-00ef8f00a281_1_372UD5BXDFYS_MC.9JGNW7M0TUHD&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Electronics~Audio~All_9JGNW7M0TUHD&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=9JGNW7M0TUHD"><div class="flex flex-col items-center mx-4">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/69c6589653afdb9a.png" class="w-16 h-16" alt="Electronics" />
+      <span class="text-sm font-medium mt-1">Electronics</span>
+    </div></a>
+
+<a href="https://www.flipkart.com/home-furnishing/pr?sid=jra&marketplace=FLIPKART&otracker=nmenu_sub_Home%20%26%20Furniture_0_Furnishing&fm=neo%2Fmerchandising&iid=M_3786a8e5-acc2-4da5-a071-388c74bf79c9_1_372UD5BXDFYS_MC.A8O1FN5LHOZ5&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Home%2B%26%2BFurniture~Home%2BFurnishings~All_A8O1FN5LHOZ5&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=A8O1FN5LHOZ5"><div class="flex flex-col items-center mx-4">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/ab7e2b022a4587dd.jpg" class="w-16 h-16" alt="Home & Furniture" />
+      <span class="text-sm font-medium mt-1">Home & Furniture</span>
+    </div></a>
+
+    <a href="https://www.flipkart.com/tvs-and-appliances-new-clp-store?fm=neo%2Fmerchandising&iid=M_447f112f-6540-415c-97d3-e7ce26a23b7b_1_372UD5BXDFYS_MC.LO4IWVHA61BX&otracker=hp_rich_navigation_6_1.navigationCard.RICH_NAVIGATION_Appliances_LO4IWVHA61BX&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_6_L0_view-all&cid=LO4IWVHA61BX"><div class="flex flex-col items-center mx-4">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png" class="w-16 h-16" alt="Appliances" />
+      <span class="text-sm font-medium mt-1">Appliances</span>
+    </div></a>
+
+   <a href="https://www.flipkart.com/travel/flights?param=DTNavIcon&fm=neo%2Fmerchandising&iid=M_2a0906d8-0966-42e9-b1f3-570c3f481ddc_1_372UD5BXDFYS_MC.V4ZPKTOAO321&otracker=hp_rich_navigation_7_1.navigationCard.RICH_NAVIGATION_Flight%2BBookings_V4ZPKTOAO321&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_7_L0_view-all&cid=V4ZPKTOAO321" ><div class="flex flex-col items-center mx-4">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/71050627a56b4693.png" class="w-16 h-16" alt="Travel" />
+      <span class="text-sm font-medium mt-1">Travel</span>
+    </div></a>
+
+   <a href="https://www.flipkart.com/beauty-and-grooming/pr?sid=g9b&otracker=categorytree&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&fm=neo%2Fmerchandising&iid=M_1cb65721-5ea3-4627-86db-4a7d570f33e5_1_372UD5BXDFYS_MC.RXB0XORLSZ1I&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Beauty%2C%2BToys%2B%26%2BMore~Beauty%2B%26%2BPersonal%2BCare_RXB0XORLSZ1I&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L1_view-all&cid=RXB0XORLSZ1I" ><div class="flex flex-col items-center mx-4">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/dff3f7adcf3a90c6.png" class="w-16 h-16" alt="Beauty, Toys & More" />
+       <span class="text-sm font-medium mt-1">Beauty, Toys & More</span>
+    </div></a>
+
+    <a href="https://www.flipkart.com/two-wheelers-store?fm=neo%2Fmerchandising&iid=M_53ccd3e7-ea8b-4d1d-90d8-ce2665fb1203_1_372UD5BXDFYS_MC.SCJPZ04TFJJM&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Two%2BWheelers~Petrol%2BVehicles_SCJPZ04TFJJM&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L1_view-all&cid=SCJPZ04TFJJM"><div class="flex flex-col items-center mx-4">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/05d708653beff580.png" class="w-16 h-16" alt="Two Wheelers" />
+        <span class="text-sm font-medium mt-1">Two Wheelers</span>
+    </div></a>
+
+  </div>
+</div>
+
+  </header>
+
+ 
+  
+  <!-- Banner -->
+  <section class="mt-4">
+    <div class="max-w-7xl mx-auto px-4">
+      <img src="2_04_36_11_Flipkart-RuPay-Offer-Banner_1_H@@IGHT_335_W@@IDTH_1014.jpg" alt="Banner" class="rounded-lg w-full object-cover" />
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="py-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-xl font-semibold mb-6">Top Deals</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <!-- Product Card -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition duration-200">
+        <a href="https://www.flipkart.com/search?q=mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">  <img src="711kX064JHL._AC_UF1000,1000_QL80_.jpg" alt="Realme C35" class="h-40 mx-auto mb-3" /></a>
+          <h3 class="text-sm font-semibold text-gray-800">Realme C35</h3>
+          <p class="text-green-600 font-bold mt-1">₹10,999</p>
+        </div>
+
+        <!-- Product Card -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition duration-200">
+          <a href="https://www.flipkart.com/search?q=shoes+for+men&sid=osp%2Ccil&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_4_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_4_na_na_na&as-pos=2&as-type=RECENT&suggestionId=shoes+for+men%7CMen%27s+Footwear&requestId=484c12c2-aabf-4c3c-9d85-0609abcab4a0&as-backfill=on"> <img src="-original-imah4aenycrvbrgd.webp" alt="Puma Shoes" class="h-40 mx-auto mb-3" /></a>
+          <h3 class="text-sm font-semibold text-gray-800">Puma Shoes</h3>
+          <p class="text-green-600 font-bold mt-1">₹1,799</p>
+        </div>
+
+        <!-- Product Card -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition duration-200">
+         <a href="https://www.flipkart.com/search?q=mens+shirt&sid=clo%2Cash%2Caxc%2Cmmk%2Ckp7&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&as-pos=1&as-type=RECENT&suggestionId=mens+shirt%7CCasual+Shirts&requestId=ac46bbc9-9e7b-4e85-b9de-4843ac7cdcf4&as-backfill=on"> <img src="LTST_TRND_PL_BROWN_1_5333916d-e7f5-4b24-ad07-b834309650f0.webp" alt="Men's Shirts" class="h-40 mx-auto mb-3" /></a>
+          <h3 class="text-sm font-semibold text-gray-800">Men's Shirts</h3>
+          <p class="text-green-600 font-bold mt-1">₹1,289</p>
+        </div>
+
+        <!-- Product Card -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition duration-200">
+          <img src="7464c246-060b-4f84-a8d7-cc90db1f25c01705918411022-OnePlus-Unisex-Headphones-4901705918410852-1.jpg" alt="earphones" class="h-40 mx-auto mb-3" />
+          <h3 class="text-sm font-semibold text-gray-800">Earphones</h3>
+          <p class="text-green-600 font-bold mt-1">₹2,590</p>
+        </div>
+
+        <!-- Product Card -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition duration-200">
+          <img src="30700276190_1.webp" alt="School Bag" class="h-40 mx-auto mb-3" />
+          <h3 class="text-sm font-semibold text-gray-800">School Bag</h3>
+          <p class="text-green-600 font-bold mt-1">₹799</p>
+        </div>
+
+        
+      </div>
+    </div>
+
+<br>
+<br>
+    <!-- Section: Sports, Healthcare & More -->
+
+
+    
+
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl font-semibold mb-4">Sports, Healthcare & more</h2>
+    <div class="flex space-x-6 overflow-x-auto">
+      <div class="text-center w-32 flex-shrink-0">
+
+
+ 
+        <img src="Dryfruitcombo_6b2b9c8d-b656-4e93-9fae-b07f6f426f35.webp" class="mx-auto mb-2" alt="Dry Fruits">
+        <p class="text-sm">Dry Fruits</p>
+        <p class="font-semibold">Upto 75% Off</p>
+      </div>
+      <div class="text-center w-32 flex-shrink-0">
+        <img src="b9ed0664b35268501713187493715.jpg" class="mx-auto mb-2" alt="Cycles">
+        <p class="text-sm">Non-Geared Cycles</p>
+        <p class="font-semibold">Up to 40% Off</p>
+      </div>
+
+
+
+
+
+
+      <div class="text-center w-32 flex-shrink-0">
+        <img src="1709901851_banner_080320241814111.jpg" class="mx-auto mb-2" alt="Treadmill">
+        <p class="text-sm">Treadmill, Exercise B...</p>
+        <p class="font-semibold">Up to 70% Off</p>
+      </div>
+      <div class="text-center w-32 flex-shrink-0">
+        <img src="-original-imagsn43h3cdrf4f.webp" class="mx-auto mb-2" alt="Food Spreads">
+        <p class="text-sm">Food Spreads</p>
+        <p class="font-semibold">Upto 75% Off</p>
+      </div>
+      <div class="text-center w-32 flex-shrink-0">
+        <img src="yoga-mat-2048px-1661.webp" class="mx-auto mb-2" alt="Yoga Mat">
+        <p class="text-sm">Yoga Mat</p>
+        <p class="font-semibold">From ₹ 159</p>
+      </div>
+      <div class="text-center w-32 flex-shrink-0">
+        <img src="Rubiks-Cube-toy.webp" class="mx-auto mb-2" alt="Puzzle">
+        <p class="text-sm">Puzzles & Cubes</p>
+        <p class="font-semibold">From ₹ 79</p>
+      </div>
+      <div class="text-center w-32 flex-shrink-0">
+        <img src="81V3dDLjP-L._AC_UF1000,1000_QL80_.jpg" class="mx-auto mb-2" alt="Cereal">
+        <p class="text-sm">Breakfast Cereal</p>
+        <p class="font-semibold">Upto 75% Off</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Hot Deals, Appliance, Festive -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+    <!-- Hot Deals -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Hot Deals on Fashion</h3>
+      <div class="space-y-4">
+        <div class="bg-white p-4 rounded shadow">
+          <a href="https://www.flipkart.com/search?q=watch+for+men&sid=r18%2Cf13&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&as-pos=1&as-type=RECENT&suggestionId=watch+for+men%7CWrist+Watches&requestId=114f2888-1b11-47c1-8871-0e3c595bf476&as-backfill=on"><img src="watch1_1099cd20-7237-4bdf-a180-b7126de5ef3d_grande.webp" class="mb-2" alt="Watches"></a>
+          <p>Watches</p>
+          <p class="text-green-600 font-semibold">Min. 50% Off</p>
+        </div>
+        <a href="https://www.flipkart.com/sports/badminton/pr?sid=abc,egs&q=sports&otracker=categorytree"><div class="bg-white p-4 rounded shadow">
+          <img src="-original-imah2nfkh6rgzhwa.webp" class="mb-2" alt="Badminton">
+          <p>Badminton</p>
+          <p class="text-green-600 font-semibold">Special offer</p>
+        </div></a>
+      </div>
+    </div>
+
+    <!-- Appliance for Cool Summer -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Appliance for Cool Summer</h3>
+      <div class="space-y-4">
+        <div class="bg-white p-4 rounded shadow">
+         <a href="https://www.flipkart.com/search?q=camera+dslr&sid=jek%2Cp31%2Ctrv&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=camera+dslr%7CDSLR+%26+Mirrorless&requestId=1529666e-c2dc-470c-af44-835a40f36c4c&as-backfill=on" ><img src="nikon-camera.jpg" class="mb-2" alt="Cameras"></a>
+          <p>Cameras</p>
+          <p class="text-green-600 font-semibold">Min. 30% Off</p>
+        </div>
+        <a href="https://www.flipkart.com/search?q=fan&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><div class="bg-white p-4 rounded shadow">
+          <img src="fanscf3-10006_13__1.webp" class="mb-2" alt="Fans">
+          <p>Fans</p>
+          <p class="text-green-600 font-semibold">Min. 50% Off</p>
+        </div></a>
+      </div>
+    </div>
+
+    <!-- Festive Must-haves -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Festive Must-haves</h3>
+      <div class="space-y-4">
+        <a href="https://www.flipkart.com/search?q=Casual%20Shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><div class="bg-white p-4 rounded shadow">
+          <img src="m-pk21sh09g-surhi-original-imahbwesaesg97xa.webp" class="mb-2" alt="Casual Shirts">
+          <p>Casual Shirts</p>
+          <p class="text-green-600 font-semibold">Special offer</p>
+        </div></a>
+      <a href="https://www.flipkart.com/search?q=Men%27s%20Trousers&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">  <div class="bg-white p-4 rounded shadow">
+          <img src="71NRkXxIBTL._AC_UY1100_.jpg" class="mb-2" alt="Trousers">
+          <p>Men's Trousers</p>
+          <p class="text-green-600 font-semibold">Min. 50% Off</p>
+        </div></a>
+      </div>
+    </div>
+  </div>
+
+
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-[#172337] text-white text-sm mt-10">
+  <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+    
+    <!-- ABOUT -->
+    <div>
+      <h3 class="text-gray-400 uppercase font-semibold mb-3">About</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Contact Us</a></li>
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Flipkart Stories</a></li>
+        <li><a href="#" class="hover:underline">Press</a></li>
+        <li><a href="#" class="hover:underline">Flipkart Wholesale</a></li>
+        <li><a href="#" class="hover:underline">Cleartrip</a></li>
+      </ul>
+    </div>
+
+    <!-- HELP -->
+    <div>
+      <h3 class="text-gray-400 uppercase font-semibold mb-3">Help</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Payments</a></li>
+        <li><a href="#" class="hover:underline">Shipping</a></li>
+        <li><a href="#" class="hover:underline">Cancellation & Returns</a></li>
+        <li><a href="#" class="hover:underline">FAQ</a></li>
+        <li><a href="#" class="hover:underline">Report Infringement</a></li>
+      </ul>
+    </div>
+
+    <!-- CONSUMER POLICY -->
+    <div>
+      <h3 class="text-gray-400 uppercase font-semibold mb-3">Consumer Policy</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Return Policy</a></li>
+        <li><a href="#" class="hover:underline">Terms Of Use</a></li>
+        <li><a href="#" class="hover:underline">Security</a></li>
+        <li><a href="#" class="hover:underline">Privacy</a></li>
+        <li><a href="#" class="hover:underline">Sitemap</a></li>
+        <li><a href="#" class="hover:underline">Grievance Redressal</a></li>
+        <li><a href="#" class="hover:underline">EPR Compliance</a></li>
+      </ul>
+    </div>
+
+    <!-- SOCIAL -->
+    <div>
+      <h3 class="text-gray-400 uppercase font-semibold mb-3">Social</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Facebook</a></li>
+        <li><a href="#" class="hover:underline">Twitter</a></li>
+        <li><a href="#" class="hover:underline">YouTube</a></li>
+      </ul>
+    </div>
+
+    <!-- MAIL US -->
+    <div>
+      <h3 class="text-gray-400 uppercase font-semibold mb-3">Mail Us:</h3>
+      <p class="text-gray-300 text-sm">
+        Flipkart Internet Private Limited,<br>
+        Buildings Alyssa, Begonia &<br>
+        Clove Embassy Tech Village,<br>
+        Outer Ring Road, Devarabeesanahalli Village,<br>
+        Bengaluru, 560103,<br>
+        Karnataka, India
+      </p>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-700 mt-4">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center text-gray-400 text-xs">
+      <div class="mb-2 md:mb-0">
+        © 2025 Flipkart Clone. All rights reserved.
+      </div>
+      <div class="space-x-4">
+        <a href="#" class="hover:underline">Terms of Use</a>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline">Help</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
