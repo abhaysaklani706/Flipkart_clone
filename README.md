@@ -11,7 +11,7 @@ This is a *frontend clone of the Flipkart homepage, created using **HTML5* and *
 
 ![Flipkart Clone Screenshot ](https://github.com/abhaysaklani706/Flipkart_clone/blob/main/Screenshot%20(1).png)
 ![Flipkart Clone Screenshot ](https://github.com/abhaysaklani706/Flipkart_clone/blob/main/Screenshot%20(2).png)
-![Flipkart Clone Screenshot ](
+![Flipkart Clone Screenshot ](https://github.com/abhaysaklani706/Flipkart_clone/blob/main/Screenshot%20(3).png)
 ## 💡 Features
 
 - Flipkart-style header with logo, search bar, and icons
@@ -27,4 +27,4 @@ This is a *frontend clone of the Flipkart homepage, created using **HTML5* and *
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/flipkart-clone.git
+   git clone https://github.com/abhaysaklani706/flipkart-clone.git
